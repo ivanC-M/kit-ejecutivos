@@ -1,1 +1,654 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Kit Ejecutivos AyHungry</title><style>*{margin:0;padding:0;box-sizing:border-box}:root{--primary:#5852DA;--dark:#201E48;--accent:#E13877;--yellow:#EFE24C;--light:#F0F3FD;--blue:#4F7FFF}body{font-family:"Karla","Arial",sans-serif;background:#F8F9FC;color:#201E48;line-height:1.6}.header{background:linear-gradient(135deg,var(--primary),var(--dark));color:#fff;padding:50px 20px;text-align:center;margin-bottom:40px}.header h1{font-size:2.5em;margin-bottom:10px;font-weight:700}.container{max-width:1200px;margin:0 auto;padding:20px}.section{background:#fff;border-radius:12px;margin-bottom:40px;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden}.section-header{background:linear-gradient(135deg,var(--primary),var(--blue));color:#fff;padding:25px 30px;border-left:5px solid var(--yellow)}.section-header h2{font-size:1.8em;font-weight:700;margin-bottom:5px}.section-content{padding:30px}.tab-container{display:flex;flex-wrap:wrap;margin-bottom:30px;border-bottom:2px solid #e8e8e8}.tab-btn{background:0;border:none;padding:15px 20px;font-size:.95em;cursor:pointer;color:#666;border-bottom:3px solid transparent;transition:all .3s;font-weight:600;font-family:"Karla",sans-serif}.tab-btn.active{color:var(--primary);border-bottom-color:var(--primary)}.tab-content{display:none}.tab-content.active{display:block}.content-box{background:#fafbfc;border-left:4px solid var(--primary);padding:20px;margin:20px 0;border-radius:6px}.content-box p{margin-bottom:12px}.content-box p:last-child{margin-bottom:0}h3{color:var(--primary);margin-top:25px;margin-bottom:15px;font-weight:700}.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:15px;margin:25px 0}.price-box{background:linear-gradient(135deg,var(--light),#fff);border:2px solid var(--primary);border-radius:8px;padding:15px;text-align:center}.price-box.featured{background:linear-gradient(135deg,var(--yellow),#ffe680)}.price-label{font-size:.85em;color:#666;margin-bottom:8px;font-weight:600}.price-value{font-size:1.8em;color:var(--dark);font-weight:700;margin:5px 0}.copy-btn{background:var(--primary);color:#fff;border:none;padding:10px 15px;border-radius:6px;cursor:pointer;font-size:.85em;font-weight:600;margin-top:15px}.copy-btn:hover{background:var(--dark)}.email-label{font-size:.85em;color:var(--accent);font-weight:700;margin:15px 0 10px 0}table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.9em}th{background:var(--primary);color:#fff;padding:12px;text-align:left;font-weight:700}td{border:1px solid #e8e8e8;padding:12px}footer{text-align:center;padding:40px 20px;color:#666;border-top:1px solid #e8e8e8;margin-top:60px}</style></head><body><div class="header"><h1>📦 Kit Ejecutivos AyHungry</h1><p>Presentaciones | Correos | WhatsApp | Precios</p></div><div class="container"><div class="section"><div class="section-header"><h2>☎️ Presentación en Llamada</h2></div><div class="section-content"><div class="tab-container"><button class="tab-btn active" onclick="switchTab(event,'pres-marketing')">Lead Marketing</button><button class="tab-btn" onclick="switchTab(event,'pres-fria')">Prospección</button></div><div id="pres-marketing" class="tab-content active"><h3>Lead desde Marketing</h3><div class="content-box"><p><strong>BUENOS DÍAS [NOMBRE],</strong></p><p>Soy [TU NOMBRE] de AyHungry. Es un gusto conectar.</p><p>Vi que te contactaste porque te interesa generar demanda y mejorar tu reputación online.</p><p>Me gustaría mostrarte cómo otros restaurantes están logrando más reservas directas en un solo lugar.</p><p>¿Te viene bien que comenzamos?</p></div><button class="copy-btn" onclick="copiarTexto('pres-marketing')">Copiar</button></div><div id="pres-fria" class="tab-content"><h3>Prospección Fría</h3><div class="content-box"><p><strong>HOLA [NOMBRE],</strong></p><p>Soy [TU NOMBRE], ejecutivo en AyHungry.</p><p>Acabo de revisar [RESTAURANTE] y veo que tienen presencia activa.</p><p>¿Tienes 15 minutos para que te cuente cómo generamos más demanda directa?</p></div><button class="copy-btn" onclick="copiarTexto('pres-fria')">Copiar</button></div></div></div><div class="section"><div class="section-header"><h2>📧 Correos</h2></div><div class="section-content"><div class="tab-container"><button class="tab-btn active" onclick="switchTab(event,'email-prospection')">Prospección</button><button class="tab-btn" onclick="switchTab(event,'email-demo')">Post-Demo</button><button class="tab-btn" onclick="switchTab(event,'email-acuerdo')">Acuerdo</button><button class="tab-btn" onclick="switchTab(event,'email-activacion')">Activación</button></div><div id="email-prospection" class="tab-content active"><h3>Prospección</h3><div class="email-label">Asunto: Idea para [RESTAURANTE]</div><div class="content-box"><p>Hola [NOMBRE],</p><p>Vi que [RESTAURANTE] está en [ZONA] y tiene buena presencia.</p><p>Ayudamos a generar demanda directa y mejorar reputación en una plataforma.</p><p>¿15 minutos esta semana?</p><p>Saludos, [TU NOMBRE] | AyHungry</p></div><button class="copy-btn" onclick="copiarTexto('email-prospection')">Copiar</button></div><div id="email-demo" class="tab-content"><h3>Post-Demo</h3><div class="email-label">Asunto: Propuesta</div><div class="content-box"><p>Hola [NOMBRE],</p><p>Fue un gusto. Te dejo la propuesta.</p><p>Ofrecemos: 1 mes prueba M1+M2.</p><p>Incluye: Reservas, reseñas, reportes, soporte 24/7.</p><p>[TU NOMBRE] | AyHungry</p></div><button class="copy-btn" onclick="copiarTexto('email-demo')">Copiar</button></div><div id="email-acuerdo" class="tab-content"><h3>Post-Acuerdo</h3><div class="email-label">Asunto: Bienvenido</div><div class="content-box"><p>Hola [NOMBRE],</p><p>Es un gusto tenerte a bordo.</p><p>Mes a mes. Activación → Capacitación → Onboarding → Soporte 24/7.</p><p>[TU NOMBRE] | AyHungry</p></div><button class="copy-btn" onclick="copiarTexto('email-acuerdo')">Copiar</button></div><div id="email-activacion" class="tab-content"><h3>Post-Activación</h3><div class="email-label">Asunto: Activado</div><div class="content-box"><p>Hola [NOMBRE],</p><p>¡Tu restaurante está activado!</p><p>Link: https://ayhungry.com/[resto]/booking</p><p>Soporte: soporte@ayhungry.com</p><p>[TU NOMBRE] | AyHungry</p></div><button class="copy-btn" onclick="copiarTexto('email-activacion')">Copiar</button></div></div></div><div class="section"><div class="section-header"><h2>💬 WhatsApp</h2></div><div class="section-content"><h3>Post-Demo (24h)</h3><div class="content-box" id="wa-demo"><p>¡Qué tal, [NOMBRE]?</p><p>Me interesa saber qué te pareció.</p><p>¿Dudas?</p></div><button class="copy-btn" onclick="copiarTexto('wa-demo')">Copiar</button><h3>Seguimiento (3d)</h3><div class="content-box" id="wa-seguimiento"><p>Hola [NOMBRE],</p><p>Creo que el plan hace match perfecto.</p><p>¿Cuándo activamos?</p></div><button class="copy-btn" onclick="copiarTexto('wa-seguimiento')">Copiar</button></div></div><div class="section"><div class="section-header"><h2>💰 Precios</h2></div><div class="section-content"><h3>Módulos</h3><div class="price-grid"><div class="price-box"><div class="price-label">M1</div><div class="price-value">1,5 UF</div></div><div class="price-box"><div class="price-label">M2</div><div class="price-value">1,5 UF</div></div><div class="price-box"><div class="price-label">M1+WA</div><div class="price-value">2,5 UF</div></div></div><h3>Bundles</h3><div class="price-grid"><div class="price-box featured"><div class="price-label">M1+M2</div><div class="price-value">2,5 UF</div></div><div class="price-box featured"><div class="price-label">FULL</div><div class="price-value">3,5 UF ⭐</div></div></div></div></div><div class="section"><div class="section-header"><h2>📊 Tabla</h2></div><div class="section-content"><table><tr><th>Feature</th><th>M1</th><th>FULL</th></tr><tr><td>Reservas</td><td>✓</td><td>✓</td></tr><tr><td>WhatsApp</td><td>—</td><td>✓</td></tr><tr><td>Reseñas</td><td>—</td><td>✓</td></tr></table></div></div></div><footer><p><strong>Kit Ejecutivos AyHungry</strong></p></footer><script>function switchTab(evt,tabName){var c=document.getElementsByClassName("tab-content");for(var i=0;i<c.length;i++)c[i].classList.remove("active");var b=document.getElementsByClassName("tab-btn");for(var i=0;i<b.length;i++)b[i].classList.remove("active");document.getElementById(tabName).classList.add("active");evt.currentTarget.classList.add("active")}function copiarTexto(sectionId){var section=document.getElementById(sectionId);var text=section.innerText;navigator.clipboard.writeText(text).then(function(){alert("Copiado ✓")})}</script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kit Ejecutivos AyHungry · Guía Comercial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#5852DA;--dark:#201E48;--accent:#E13877;--yellow:#EFE24C;--ly:#FFF7B0;--light:#F0F3FD;--vs:#AEB9F1;--bt:#4F7FFF;--lb:#CDD5F7;--pot:#6C6B81;--lg:#F9F9FB;--mg:#DFDFE3}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Karla',sans-serif;background:var(--lg);color:var(--dark);line-height:1.6}
+h1,h2,h3,h4{font-family:'Lato',sans-serif}
+.hero{background:linear-gradient(135deg,var(--dark) 0%,var(--primary) 100%);color:#fff;padding:60px 20px 80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50px;right:-50px;width:300px;height:300px;background:var(--yellow);border-radius:50%;opacity:.1}
+.hc{max-width:1200px;margin:0 auto;position:relative;z-index:2}
+.hp{font-size:.85em;font-weight:700;color:var(--yellow);letter-spacing:3px;text-transform:uppercase;margin-bottom:15px}
+.hero h1{font-size:3.2em;font-weight:900;line-height:1.1;margin-bottom:20px;max-width:800px}
+.hero h1 .ac{color:var(--yellow)}
+.hero p{font-size:1.15em;max-width:700px;opacity:.95;margin-bottom:30px}
+.hm{display:flex;gap:30px;flex-wrap:wrap;margin-top:30px;padding-top:30px;border-top:1px solid rgba(255,255,255,.15)}
+.hm div{font-size:.9em}
+.hm strong{color:var(--yellow);display:block;font-size:.75em;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}
+.nav{background:var(--dark);padding:18px 20px;position:sticky;top:0;z-index:100;box-shadow:0 2px 15px rgba(0,0,0,.2)}
+.nc{max-width:1200px;margin:0 auto;display:flex;gap:5px;flex-wrap:wrap;justify-content:center}
+.nav a{color:#fff;text-decoration:none;font-size:.85em;font-weight:700;padding:8px 14px;border-radius:6px;transition:.2s;white-space:nowrap}
+.nav a:hover{background:var(--primary)}
+.ct{max-width:1200px;margin:0 auto;padding:60px 20px}
+.sec{background:#fff;border-radius:16px;margin-bottom:50px;box-shadow:0 4px 20px rgba(32,30,72,.06);overflow:hidden}
+.sh{background:linear-gradient(135deg,var(--primary) 0%,var(--bt) 100%);color:#fff;padding:35px 40px;border-left:6px solid var(--yellow)}
+.sn{font-size:.75em;letter-spacing:4px;color:var(--yellow);text-transform:uppercase;font-weight:700;display:block;margin-bottom:8px}
+.sh h2{font-size:2.1em;font-weight:900;margin-bottom:8px;line-height:1.1}
+.sh .st{font-size:1em;opacity:.95;font-weight:400}
+.sc{padding:40px}
+.si{font-size:1.05em;color:var(--pot);line-height:1.75;margin-bottom:25px;padding-bottom:20px;border-bottom:2px solid var(--light)}
+h3.sst{font-size:1.4em;color:var(--dark);margin:30px 0 15px;padding-left:18px;border-left:4px solid var(--primary)}
+h4.mt{font-size:1.1em;color:var(--primary);margin:20px 0 12px;font-weight:700}
+.dg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:25px 0}
+.dc{background:var(--light);border-left:5px solid var(--accent);border-radius:10px;padding:25px;transition:.2s}
+.dc:hover{transform:translateY(-3px)}
+.dc .ic{font-size:2em;margin-bottom:12px;display:block}
+.dc h4{font-size:1.1em;color:var(--dark);margin-bottom:10px;font-weight:700}
+.dc p{font-size:.92em;color:var(--pot);line-height:1.6}
+.tc{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin:25px 0}
+.cb{background:var(--lg);border-radius:12px;padding:25px;border-top:4px solid var(--primary)}
+.cb.alt{border-top-color:var(--accent)}
+.cb h4{color:var(--primary);font-size:1.1em;margin-bottom:12px;font-weight:700}
+.cb.alt h4{color:var(--accent)}
+.tab{display:flex;flex-wrap:wrap;margin-bottom:25px;border-bottom:2px solid var(--mg)}
+.tb{background:transparent;border:none;padding:14px 22px;font-size:.95em;cursor:pointer;color:var(--pot);border-bottom:3px solid transparent;font-weight:700;font-family:'Karla',sans-serif;transition:.2s;margin-bottom:-2px}
+.tb.active{color:var(--primary);border-bottom-color:var(--primary)}
+.tb:hover{color:var(--primary)}
+.tco{display:none}
+.tco.active{display:block;animation:fi .3s}
+@keyframes fi{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.sb{background:linear-gradient(135deg,#FAFBFF 0%,var(--light) 100%);border-left:5px solid var(--primary);padding:28px 30px;border-radius:10px;margin:18px 0;font-size:.97em;line-height:1.85}
+.sb p{margin-bottom:14px}
+.sb p:last-child{margin-bottom:0}
+.sb .hl{background:var(--yellow);padding:2px 6px;border-radius:4px;font-weight:700}
+.sm{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:15px}
+.tg{display:inline-block;padding:4px 12px;border-radius:20px;font-size:.75em;font-weight:700;letter-spacing:.5px;text-transform:uppercase}
+.tg-w{background:#D4EDDA;color:#155724}
+.tg-c{background:var(--light);color:var(--primary)}
+.tg-s{background:var(--dark);color:var(--yellow)}
+.tg-d{background:var(--vs);color:var(--dark)}
+.eh{background:var(--dark);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;font-size:.9em}
+.eh strong{color:var(--yellow)}
+.eb{background:#fff;border:1px solid var(--mg);border-top:none;border-radius:0 0 8px 8px;padding:25px 28px;font-size:.95em;line-height:1.8}
+.eb p{margin-bottom:12px}
+.wb{background:#DCF8C6;border-radius:14px;padding:16px 20px;margin:12px 0;max-width:500px;position:relative;font-size:.95em;line-height:1.7;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.wb p{margin-bottom:8px}
+.wb p:last-child{margin-bottom:0}
+.wt{font-size:.7em;color:var(--pot);float:right;margin-top:4px}
+.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin:25px 0}
+.pc{background:#fff;border:2px solid var(--lb);border-radius:14px;padding:25px 20px;text-align:center;position:relative;transition:.2s}
+.pc:hover{border-color:var(--primary);transform:translateY(-4px);box-shadow:0 10px 25px rgba(88,82,218,.15)}
+.pc.ft{background:linear-gradient(135deg,var(--yellow) 0%,var(--ly) 100%);border-color:var(--primary);transform:scale(1.03)}
+.pc.ft::before{content:'TOP';position:absolute;top:-10px;right:15px;background:var(--accent);color:#fff;font-size:.7em;font-weight:900;padding:4px 12px;border-radius:20px;letter-spacing:1px}
+.ml{font-size:.75em;font-weight:700;color:var(--pot);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.mn{font-size:.95em;color:var(--dark);margin-bottom:15px;font-weight:500}
+.pv{font-family:'Lato',sans-serif;font-size:2.4em;font-weight:900;color:var(--dark);line-height:1}
+.pu{font-size:.45em;color:var(--pot);font-weight:700;display:block;margin-top:6px}
+.sv{font-size:.8em;color:var(--accent);font-weight:700;margin-top:12px;padding-top:12px;border-top:1px solid rgba(0,0,0,.08)}
+.ctab{width:100%;border-collapse:separate;border-spacing:0;margin:25px 0;font-size:.92em;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.ctab th{background:var(--dark);color:#fff;padding:16px 12px;text-align:center;font-weight:700;font-family:'Lato',sans-serif}
+.ctab th:first-child{text-align:left}
+.ctab td{padding:14px 12px;text-align:center;border-bottom:1px solid var(--mg);background:#fff}
+.ctab td:first-child{text-align:left;font-weight:700;color:var(--dark)}
+.ctab tr:nth-child(even) td{background:var(--lg)}
+.ck{color:#28a745;font-weight:700;font-size:1.2em}
+.dh{color:var(--mg);font-weight:700}
+.fr td{background:#FFF9E6!important}
+.pr td{background:var(--dark)!important;color:var(--yellow)!important;font-weight:900;font-family:'Lato',sans-serif;font-size:1em}
+.oc{background:#fff;border-radius:12px;padding:25px 28px;margin-bottom:20px;border-left:5px solid var(--accent);box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.oq{font-style:italic;font-size:1.05em;color:var(--dark);font-weight:700;margin-bottom:12px;font-family:'Lato',sans-serif}
+.oq::before{content:'« ';color:var(--accent)}
+.oq::after{content:' »';color:var(--accent)}
+.om{background:var(--light);padding:12px 16px;border-radius:8px;font-size:.9em;margin:12px 0;border-left:3px solid var(--primary)}
+.om strong{color:var(--primary)}
+.or{font-size:.95em;line-height:1.75;margin:12px 0}
+.ocl{background:var(--dark);color:var(--yellow);padding:10px 16px;border-radius:8px;font-size:.88em;margin-top:12px;font-weight:500}
+.ocl strong{color:#fff}
+.ql{list-style:none;counter-reset:qc;padding:0}
+.ql li{counter-increment:qc;background:var(--light);padding:15px 18px 15px 60px;border-radius:10px;margin-bottom:10px;position:relative;font-size:.95em;line-height:1.6}
+.ql li::before{content:counter(qc);position:absolute;left:15px;top:50%;transform:translateY(-50%);background:var(--primary);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-family:'Lato',sans-serif;font-size:.95em}
+.dt{width:100%;border-collapse:collapse;margin:20px 0;font-size:.92em}
+.dt th{background:var(--accent);color:#fff;padding:14px 16px;text-align:left;font-family:'Lato',sans-serif}
+.dt td{padding:14px 16px;border-bottom:1px solid var(--mg);background:#fff}
+.dt tr:nth-child(even) td{background:var(--lg)}
+.dt td:first-child{font-style:italic;color:var(--pot)}
+.dt td:last-child{font-weight:700;color:var(--dark)}
+.pb{background:linear-gradient(135deg,var(--dark) 0%,var(--primary) 100%);color:#fff;padding:30px 32px;border-radius:14px;margin:18px 0;position:relative;overflow:hidden}
+.pb::before{content:'"';position:absolute;top:-20px;left:15px;font-size:8em;font-family:'Lato',sans-serif;color:var(--yellow);opacity:.2;line-height:1}
+.pl{display:inline-block;background:var(--yellow);color:var(--dark);padding:5px 14px;border-radius:20px;font-size:.7em;font-weight:900;letter-spacing:2px;margin-bottom:15px}
+.pcn{font-size:1.05em;line-height:1.75;font-style:italic;position:relative;z-index:2}
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin:20px 0}
+.sib{border-radius:12px;padding:25px}
+.sgo{background:#E8F5E9;border-left:5px solid #28a745}
+.sba{background:#FFEBEE;border-left:5px solid #d32f2f}
+.sib h4{margin-bottom:12px;font-size:1.05em}
+.sgo h4{color:#155724}
+.sba h4{color:#b71c1c}
+.sib ul{padding-left:18px;font-size:.92em;line-height:1.7}
+.sib ul li{margin-bottom:6px}
+.al{background:#FFEBEE;border-left:5px solid #d32f2f;padding:25px 30px;border-radius:12px;margin:20px 0}
+.al h4{color:#b71c1c;font-size:1.1em;margin-bottom:15px}
+.al ul{padding-left:20px}
+.al li{margin-bottom:10px;font-size:.93em;line-height:1.6}
+.dmg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:25px 0}
+.dcd{background:#fff;border-radius:12px;padding:22px;border:2px solid var(--lb);text-align:center}
+.sl{display:inline-block;padding:6px 14px;background:var(--dark);color:var(--yellow);border-radius:20px;font-size:.75em;font-weight:900;letter-spacing:2px;margin-bottom:15px}
+.dd{font-family:'Lato',sans-serif;font-size:2.2em;font-weight:900;color:var(--primary);margin-bottom:8px}
+.du{font-size:.4em;color:var(--pot)}
+.ds{font-size:.85em;color:var(--pot);line-height:1.7;margin-top:12px}
+.cpb{background:var(--primary);color:#fff;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;font-size:.85em;font-weight:700;font-family:'Karla',sans-serif;transition:.2s;margin-top:12px}
+.cpb:hover{background:var(--dark);transform:translateY(-1px)}
+.co{background:linear-gradient(135deg,var(--yellow) 0%,var(--ly) 100%);padding:20px 25px;border-radius:12px;margin:20px 0;font-size:.95em;line-height:1.7;border-left:5px solid var(--accent)}
+.co strong{color:var(--dark)}
+.cod{background:var(--dark);color:#fff;padding:25px 30px;border-radius:12px;margin:20px 0;border-left:5px solid var(--yellow)}
+.cod strong{color:var(--yellow)}
+.mg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin:20px 0}
+.mb{background:#fff;border-radius:12px;padding:22px;text-align:center;border:2px solid var(--light)}
+.mv{font-family:'Lato',sans-serif;font-size:2.5em;font-weight:900;color:var(--primary);line-height:1}
+.ml-lab{font-size:.85em;color:var(--pot);margin-top:10px}
+.stt{width:100%;border-collapse:collapse;margin:20px 0;font-size:.92em}
+.stt th{background:var(--primary);color:#fff;padding:14px 16px;text-align:left;font-family:'Lato',sans-serif}
+.stt td{padding:14px 16px;border-bottom:1px solid var(--mg);vertical-align:top}
+.stt tr:nth-child(even) td{background:var(--lg)}
+footer{background:var(--dark);color:#fff;text-align:center;padding:40px 20px;margin-top:40px}
+footer .br{font-family:'Lato',sans-serif;font-size:1.4em;font-weight:900;color:var(--yellow);margin-bottom:10px}
+footer .me{font-size:.85em;opacity:.8}
+@media(max-width:768px){.hero h1{font-size:2em}.tc,.sg,.dmg{grid-template-columns:1fr}.nav{display:none}.sc{padding:25px}.sh{padding:25px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+<div class="hc">
+<div class="hp">Kit Ejecutivos · Uso Interno</div>
+<h1>Vendemos una <span class="ac">narrativa</span>, no un sistema.</h1>
+<p>Guía operativa para el equipo comercial AyHungry. Cómo abrir, calificar, demostrar valor, manejar objeciones y cerrar deals en restaurantes de ticket medio-alto y grupos gastronómicos.</p>
+<div class="hm">
+<div><strong>Versión</strong>v2.0 · Junio 2026</div>
+<div><strong>Basado en</strong>Playbook de Ventas v1</div>
+<div><strong>Audiencia</strong>Equipo Comercial</div>
+<div><strong>Tono</strong>Cercano · Directo · Consultor</div>
+</div>
+</div>
+</header>
+
+<nav class="nav">
+<div class="nc">
+<a href="#dolores">Dolores</a>
+<a href="#puertas">Puertas</a>
+<a href="#pitches">Pitches</a>
+<a href="#llamada">Llamada</a>
+<a href="#discovery">Discovery</a>
+<a href="#demo">Demo</a>
+<a href="#correos">Correos</a>
+<a href="#whatsapp">WhatsApp</a>
+<a href="#precios">Precios</a>
+<a href="#objeciones">Objeciones</a>
+<a href="#cierre">Cierre</a>
+<a href="#tabla">Tabla</a>
+<a href="#metricas">Métricas</a>
+<a href="#anti">Anti-patrones</a>
+</div>
+</nav>
+
+<div class="ct">
+
+<section class="sec" id="dolores">
+<div class="sh"><span class="sn">01 · El punto de partida</span><h2>Los 6 dolores reales del restaurante</h2><div class="st">Todo lo que vendemos resuelve uno de estos. Si no escuchas alguno en discovery, no hay deal.</div></div>
+<div class="sc">
+<p class="si">El cliente nunca compra features — compra alivio a un dolor concreto. Tu trabajo en los primeros 10 minutos de conversación es identificar cuál de estos 6 dolores le está costando dinero hoy. Toda la propuesta posterior se construye sobre eso.</p>
+<div class="dg">
+<div class="dc"><span class="ic">🪑</span><h4>Mesas vacías en horario valle</h4><p>De lunes a jueves, entre 13–14 y 19–20, la sala respira. Los costos fijos no. Cada mesa vacía es margen perdido que no vuelve.</p></div>
+<div class="dc"><span class="ic">📞</span><h4>Reservas dispersas en mil canales</h4><p>Instagram, WhatsApp, llamadas, mail, walk-ins. Información que vive en distintos lugares, se pierde, se duplica, y nadie tiene la foto real.</p></div>
+<div class="dc"><span class="ic">👤</span><h4>El cliente viene, se va, y no queda nada</h4><p>No tienes su mail, no sabes cuándo volvió la última vez, ni si vuelve. Cada visita arranca de cero. Tu base de clientes vive en la cabeza del mesero.</p></div>
+<div class="dc"><span class="ic">⭐</span><h4>Reputación fragmentada y sin gestión</h4><p>Reseñas en Google, TripAdvisor, Facebook, Instagram. Algunas se responden, otras no. Nadie ve el panorama completo. El rating sube o baja sin entender por qué.</p></div>
+<div class="dc"><span class="ic">🎫</span><h4>Eventos gestionados a mano</h4><p>Cenas temáticas, maridajes, talleres: oportunidades de margen alto que terminan ocupando media semana del equipo entre planillas, transferencias y confirmaciones.</p></div>
+<div class="dc"><span class="ic">📊</span><h4>Sin data consolidada para decidir</h4><p>El dueño o gerente no tiene un dashboard. Decide por intuición, no por información. Y si tiene varios locales, la inconsistencia entre ellos es invisible hasta que es tarde.</p></div>
+</div>
+<div class="co"><strong>Insight clave del Playbook:</strong> En grupos mid+ y enterprise, el dolor declarado casi nunca es el dolor real. Te van a decir <em>"queremos mejorar reservas"</em>, pero el dolor real es <em>"nuestra data de reputación está fragmentada y nadie tiene la foto consolidada"</em>. Por eso reseñas abre mejor que reservas en cuentas grandes.</div>
+</div>
+</section>
+
+<section class="sec" id="puertas">
+<div class="sh"><span class="sn">02 · Cómo abrir</span><h2>Las 2 puertas de entrada validadas</h2><div class="st">Elegir mal la puerta = perder el deal antes de empezar. Esta es la decisión más importante en los primeros 3 minutos.</div></div>
+<div class="sc">
+<p class="si">Hay dos formas validadas de abrir la conversación con un restaurante. La regla es simple: empieza por el dolor más visible para ese segmento, no por el módulo que más te gusta vender.</p>
+<div class="tc">
+<div class="cb">
+<h4>🔍 Puerta 1 · Reputación / Reseñas</h4>
+<p style="font-size:.92em;margin-bottom:12px"><strong>Ideal para:</strong> Mid-market y enterprise (3+ locales).</p>
+<ul style="padding-left:20px;font-size:.92em;line-height:1.75">
+<li>Dolor concreto y visible — las reseñas de Google son públicas.</li>
+<li>Permite hook con data del prospecto en el primer mensaje.</li>
+<li>Mejor conversión inicial en grupos con varios locales.</li>
+<li>Validado en G&amp;N Brands, Grupo Gastronómico (9 locales), conversaciones BK Chile.</li>
+</ul>
+</div>
+<div class="cb alt">
+<h4>📅 Puerta 2 · Reservas</h4>
+<p style="font-size:.92em;margin-bottom:12px"><strong>Ideal para:</strong> SMB independientes premium.</p>
+<ul style="padding-left:20px;font-size:.92em;line-height:1.75">
+<li>Dolor declarado: <em>"me llaman por teléfono todo el día"</em>.</li>
+<li>Funciona mejor cuando el local <strong>NO</strong> tiene sistema actual de reservas.</li>
+<li>Cuidado: si ya usan Cover Manager, NO entres por aquí.</li>
+<li>Default para restaurantes independientes de ticket medio-alto.</li>
+</ul>
+</div>
+</div>
+<div class="cod"><strong>Regla operativa:</strong> ¿No sabes por dónde entrar? Pregúntate qué dolor es más visible desde afuera. Si puedes mostrarle una reseña suya en pantalla, entras por reputación. Si te dice que vive con el teléfono en la mano, entras por reservas.</div>
+</div>
+</section>
+
+<section class="sec" id="pitches">
+<div class="sh"><span class="sn">03 · Qué vendemos realmente</span><h2>Los 3 pitches de 60 segundos</h2><div class="st">El producto es el mismo. La narrativa cambia según el segmento. Memorizar y poder contar sin leer.</div></div>
+<div class="sc">
+<p class="si">No vendemos features — vendemos una narrativa única. Cada vendedor debe poder contar el pitch correcto en 60 segundos, sin script en mano. Aquí están los tres validados por el Playbook.</p>
+<div class="pb"><div class="pl">SMB · Restaurante Independiente</div><div class="pcn">"AyHungry te ayuda a llenar el local y a manejar las reseñas de Google sin que tengas que estar encima todo el día. Centralizamos tus reservas, respondemos las reseñas con IA en tu tono, y te mandamos un reporte semanal para que veas cómo va tu reputación. Te lo dejamos operando en 2 semanas."</div></div>
+<div class="pb"><div class="pl">MID · Grupo Gastronómico (3–9 locales)</div><div class="pcn">"AyHungry es el sistema operativo de tu grupo gastronómico. Centralizamos reservas, reputación y data de todos tus locales en un solo dashboard, con reportes ejecutivos para que tomes decisiones cross-locales. Hoy trabajamos con más de 300 locales en Chile, incluyendo el grupo corporativo más grande del país."</div></div>
+<div class="pb"><div class="pl">ENT · Cadena Enterprise (10+ locales)</div><div class="pcn">"AyHungry es la plataforma de reputación, reservas y data para cadenas gastronómicas. Resolvemos un problema concreto: hoy gestionan reseñas manualmente, sin un sistema centralizado, y eso es insostenible a escala. Te propongo una prueba de 30 días con 3 locales para mostrarte data real que puedas llevar a directorio. Sin compromiso de continuidad."</div></div>
+<h4 class="mt">Qué NO vendemos (importante para no confundirse)</h4>
+<div class="cb" style="margin-top:15px"><h4>No somos esto</h4><ul style="padding-left:20px;font-size:.92em;line-height:1.75"><li><strong>No somos Cover Manager.</strong> No le pidas a alguien que cambie un sistema de reservas que ya le funciona.</li><li><strong>No somos OpenTable / TheFork.</strong> No vivimos de comisiones por cliente — vivimos de SaaS.</li><li><strong>No somos un CRM tradicional.</strong> Pero capturamos data del cliente final desde reseña y reserva.</li></ul></div>
+</div>
+</section>
+
+<section class="sec" id="llamada">
+<div class="sh"><span class="sn">04 · Los primeros 60 segundos</span><h2>Presentación en llamada</h2><div class="st">Dos guiones según el origen del lead. NO leer literal — usar como marco.</div></div>
+<div class="sc">
+<p class="si">Estos guiones son punto de partida, no script literal. La regla del Playbook se mantiene: <strong>"si tu instinto frente al cliente contradice esto, sigue al cliente"</strong>. El guión sirve para no perderte en los primeros 60 segundos donde se gana o pierde la atención.</p>
+<div class="tab">
+<button class="tb active" onclick="st(event,'lw')">Lead desde Marketing (Warm)</button>
+<button class="tb" onclick="st(event,'lc')">Prospección Fría (Cold)</button>
+</div>
+<div id="lw" class="tco active">
+<div class="sm"><span class="tg tg-w">Lead Inbound</span><span class="tg tg-d">~60 segundos</span><span class="tg tg-s">Todos los segmentos</span></div>
+<h4 class="mt">Apertura para lead que ya nos contactó</h4>
+<div class="sb" id="sw">
+<p><strong>Buenos días/tardes [NOMBRE],</strong></p>
+<p>Soy <span class="hl">[TU NOMBRE]</span> de AyHungry. Es un gusto conectar contigo.</p>
+<p>Vi que te contactaste con nosotros porque te interesa saber más sobre cómo <span class="hl">generar demanda directa y mejorar tu reputación online</span>.</p>
+<p>Hoy me gustaría mostrarte en 20 minutos cómo otros restaurantes como <span class="hl">[NOMBRE RESTAURANTE]</span> están logrando más reservas directas y mejor control de su reputación en un solo lugar — sin depender de plataformas que se quedan con el cliente.</p>
+<p>Antes de mostrarte el producto, me encantaría entender mejor tu operación. <strong>¿Te parece si comenzamos por ahí?</strong></p>
+</div>
+<button class="cpb" onclick="cp('sw')">📋 Copiar guión</button>
+<h4 class="mt">Por qué este guión funciona</h4>
+<ul style="padding-left:20px;line-height:1.8;font-size:.95em">
+<li><strong>Reconoce intención previa:</strong> "Vi que te contactaste" — valida que el cliente ya dio un paso.</li>
+<li><strong>Pivota a discovery, no a demo:</strong> "Antes de mostrarte… me encantaría entender" — escuchas primero, vendes después.</li>
+<li><strong>Cierra con permiso explícito:</strong> "¿Te parece si comenzamos?" — el cliente se siente al control.</li>
+</ul>
+</div>
+<div id="lc" class="tco">
+<div class="sm"><span class="tg tg-c">Prospección Outbound</span><span class="tg tg-d">~45 segundos</span><span class="tg tg-s">SMB / MID</span></div>
+<h4 class="mt">Apertura para prospección fría</h4>
+<div class="sb" id="sc-cold">
+<p><strong>Hola [NOMBRE],</strong></p>
+<p>Soy <span class="hl">[TU NOMBRE]</span>, ejecutivo en AyHungry.</p>
+<p>Te llamo directo porque acabo de revisar <span class="hl">[NOMBRE RESTAURANTE]</span> y vi un par de cosas que me hicieron pensar que podría hacerles sentido una conversación: <strong>[OBSERVACIÓN CONCRETA — ej: "tu rating está en 4.5 con buen volumen, pero hay un patrón en las reseñas recientes que vale la pena mirar"]</strong>.</p>
+<p>Trabajamos con más de 300 restaurantes en Chile ayudándolos a <span class="hl">centralizar reservas, gestionar reseñas con IA y entender mejor a su cliente</span>. Todo en una sola plataforma.</p>
+<p>¿Tienes 15 minutos esta semana para que te lo muestre en vivo? Sin compromiso.</p>
+</div>
+<button class="cpb" onclick="cp('sc-cold')">📋 Copiar guión</button>
+<div class="co"><strong>Regla de oro del cold:</strong> El template genérico convierte 5x peor que uno personalizado. <strong>Siempre</strong> usa una observación concreta del prospecto (rating, número de reseñas, comentario específico, comparación entre sus locales). Si no puedes personalizar, no llames.</div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="discovery">
+<div class="sh"><span class="sn">05 · La conversación que mueve la aguja</span><h2>Discovery — escuchar 70% del tiempo</h2><div class="st">Una buena discovery convierte una demo genérica en una propuesta personalizada que ya tiene 70% del cierre.</div></div>
+<div class="sc">
+<p class="si">Antes de mostrar producto, escucha. Estas son las 7 preguntas que <strong>siempre</strong> se hacen en discovery, validadas por el Playbook. La regla: nunca pases a la demo sin tener respuesta clara a las 7.</p>
+<h3 class="sst">Las 7 preguntas core (todos los segmentos)</h3>
+<ol class="ql">
+<li><strong>¿Cuántos locales tienen hoy y bajo qué marcas?</strong> — confirma segmento y dimensiona deal.</li>
+<li><strong>¿Quién toma la decisión final si avanzamos?</strong> — clave para no perder tiempo con no-decisor.</li>
+<li><strong>¿Cómo gestionan hoy las reseñas? ¿Quién responde, con qué frecuencia, con qué proceso?</strong> — el dolor real aparece acá.</li>
+<li><strong>¿Cómo gestionan hoy las reservas? ¿Qué sistema usan, qué les funciona y qué no?</strong> — entender por qué puerta entrar.</li>
+<li><strong>¿Qué métrica de operación o reputación les importa más este trimestre?</strong> — alinea tu pitch con su KPI.</li>
+<li><strong>¿Han probado otras plataformas antes? ¿Qué pasó?</strong> — predice objeciones y churn potencial.</li>
+<li><strong>Si todo va bien con una prueba, ¿qué pasaría después?</strong> — fuerza al cliente a visualizar el cierre.</li>
+</ol>
+<h3 class="sst">Dolor declarado vs dolor real</h3>
+<p style="margin-bottom:15px;font-size:.95em;color:var(--pot)">Los clientes casi siempre te dicen lo que <em>creen</em> que es su problema. Tu trabajo es escuchar dos capas abajo. Estas equivalencias están validadas con clientes reales:</p>
+<table class="dt">
+<thead><tr><th>Lo que te dicen</th><th>Lo que probablemente quieren decir</th></tr></thead>
+<tbody>
+<tr><td>"Quiero mejorar mis reservas"</td><td>No tengo control de quién viene a mi local</td></tr>
+<tr><td>"Queremos mejores reseñas"</td><td>No sé qué piensan mis clientes de mí en tiempo real</td></tr>
+<tr><td>"Necesito automatizar respuestas"</td><td>No tengo tiempo de mirar Google todos los días</td></tr>
+<tr><td>"Tenemos que crecer en marketing"</td><td>No tengo data de qué funciona y qué no</td></tr>
+<tr><td>"Necesitamos un sistema más moderno"</td><td>Mi operación depende de planillas y memoria del equipo</td></tr>
+</tbody>
+</table>
+<h3 class="sst">Preguntas específicas por segmento</h3>
+<div class="tc">
+<div class="cb"><h4>🏢 MID / ENT</h4><ul style="padding-left:20px;font-size:.92em;line-height:1.75">
+<li>¿Existe alguien dedicado a marketing/operaciones que reporta a directorio? ¿Quién?</li>
+<li>¿Tienen consolidadas las fichas de Google Business o cada local maneja la suya?</li>
+<li>Si presentaras al directorio el resultado de una prueba de 30 días, ¿qué números querrían ver?</li>
+<li>¿Hay restricciones de compliance, contratos vigentes o procesos internos de validación?</li>
+</ul></div>
+<div class="cb alt"><h4>🍽️ SMB</h4><ul style="padding-left:20px;font-size:.92em;line-height:1.75">
+<li>¿Cuántas horas a la semana dedicas tú (el dueño) a responder reseñas y manejar reservas?</li>
+<li>¿Tu local trabaja al 100% en horario punta y queda vacío en horario valle? ¿Cuánto te duele esa diferencia?</li>
+<li>Si te llegaran 10 reservas más a la semana en horario valle, ¿qué impacto real tendría en tu caja?</li>
+</ul></div>
+</div>
+<div class="cod"><strong>Red flags durante discovery — cuándo matar el deal:</strong>
+<ul style="padding-left:20px;margin-top:12px;line-height:1.75;font-size:.92em">
+<li>El interlocutor no puede responder ninguna de las 7 preguntas sin consultar.</li>
+<li>Piden cotización por mail antes de cualquier conversación.</li>
+<li>En la primera reunión ya hay 3+ pedidos de customización del producto.</li>
+<li>Detectas que están en proceso de cambio de dueño, fusión o cierre.</li>
+<li>El sponsor tiene prisa irracional por "tener una herramienta antes de fin de mes".</li>
+</ul></div>
+</div>
+</section>
+
+<section class="sec" id="demo">
+<div class="sh"><span class="sn">06 · Mostrar producto</span><h2>Demo — la conversación guiada</h2><div class="st">La demo NO es un tour del producto. Es una conversación donde muestras específicamente lo que resuelve lo que el cliente te dijo en discovery.</div></div>
+<div class="sc">
+<p class="si">Si haces feature dumping, mataste el deal antes de la propuesta. La regla fuerte: <strong>reputación lidera, reservas viene después</strong> (excepto SMB sin sistema actual).</p>
+<h3 class="sst">Estructura por segmento</h3>
+<div class="dmg">
+<div class="dcd"><div class="sl">SMB</div><div class="dd">30<span class="du"> min</span></div><div class="ds">5 min recap dolor<br>15 min demo (Reservas + Reseñas)<br>5 min reporte semanal<br>5 min próximos pasos</div></div>
+<div class="dcd"><div class="sl">MID</div><div class="dd">45<span class="du"> min</span></div><div class="ds">10 min recap con data de SUS locales<br>20 min demo enfocada<br>10 min dashboard multi-local<br>5 min próximos pasos</div></div>
+<div class="dcd"><div class="sl">ENT</div><div class="dd">60<span class="du"> min</span></div><div class="ds">15 min contexto y data del grupo<br>25 min demo + casos de uso<br>10 min propuesta de prueba<br>10 min Q&amp;A directorio</div></div>
+</div>
+<h3 class="sst">Qué NO mostrar (regla fuerte)</h3>
+<div class="al"><h4>Errores que destruyen demos</h4><ul>
+<li><strong>Features en roadmap que no están operativas en producción.</strong> Si preguntan y no puedes demostrarlo en vivo, pierde credibilidad todo lo demás.</li>
+<li><strong>Todo el producto.</strong> Si el cliente no preguntó por ticketera, no abras ticketera. Genera ruido.</li>
+<li><strong>Capturas de otros clientes con data sensible visible.</strong> Usar siempre cuenta demo o datos blureados.</li>
+<li><strong>Comparaciones explícitas con competidores por nombre.</strong> Diferenciate por valor propio, no por descalificación.</li>
+</ul></div>
+<div class="co"><strong>Demo personalizada — el cierre invisible:</strong> Antes de cada demo mid+ y enterprise, dedicar 20–30 minutos a buscar datos públicos del prospecto y tenerlos listos para usar EN VIVO. Ejemplo real (G&amp;N Brands): mostrar en pantalla compartida que su CV Galería tiene 4.9 con 2.166 reseñas y otro local 4.1 con 200, explicar lo que la calculadora dice de cuánto les tomaría cerrar esa brecha. <strong>Eso no es demo: es consultoría gratuita en vivo. Cierra deals.</strong></div>
+</div>
+</section>
+
+<section class="sec" id="correos">
+<div class="sh"><span class="sn">07 · Templates de correo</span><h2>Correos por etapa del deal</h2><div class="st">Punto de partida — siempre personalizar con datos públicos antes de enviar. El genérico convierte 5x peor.</div></div>
+<div class="sc">
+<p class="si">Cuatro plantillas que cubren las etapas críticas del ciclo: prospección, post-demo, post-acuerdo y post-activación. La regla del Playbook: <strong>nunca enviar propuesta antes de la reunión</strong>. El cliente la lee sin contexto, decide por precio y el deal se cae.</p>
+<div class="tab">
+<button class="tb active" onclick="st(event,'e1')">1 · Prospección</button>
+<button class="tb" onclick="st(event,'e2')">2 · Post-Demo</button>
+<button class="tb" onclick="st(event,'e3')">3 · Post-Acuerdo</button>
+<button class="tb" onclick="st(event,'e4')">4 · Post-Activación</button>
+</div>
+
+<div id="e1" class="tco active">
+<h4 class="mt">Cold Outreach — para LinkedIn o email directo</h4>
+<div class="eh"><strong>Asunto:</strong> Idea para [NOMBRE RESTAURANTE] — visibilidad en demanda</div>
+<div class="eb" id="e1b">
+<p>Hola [NOMBRE],</p>
+<p>Te escribo porque vi que [NOMBRE RESTAURANTE] está en [ZONA/COMUNA] y tiene buena presencia — pero noté un par de cosas que me hicieron pensar que podría hacerte sentido conversar: <strong>[OBSERVACIÓN CONCRETA — ej: "tu rating está en 4.5 con 1.500+ reseñas, lo que significa que estás justo en el umbral del 31% de consumidores que ya exige 4.5 estrellas"]</strong>.</p>
+<p>Trabajamos con más de 300 locales en Chile ayudándolos a:</p>
+<p>→ Generar demanda directa, sin depender de apps que se quedan con el cliente.<br>→ Entender qué motiva a sus clientes a volver (y a no volver).<br>→ Gestionar reputación online con IA, sin que tu equipo viva pegado a Google.</p>
+<p>Si tienes 15 minutos esta semana, me gustaría mostrarte en vivo cómo funciona. Sin compromiso.</p>
+<p>¿Cuándo te vendría bien?</p>
+<p>Saludos,<br>[TU NOMBRE] · AyHungry</p>
+</div>
+<button class="cpb" onclick="cp('e1b')">📋 Copiar correo</button>
+<div class="co"><strong>Recordatorio del Playbook:</strong> Si no puedes personalizar con un dato concreto del prospecto (rating, número de reseñas, comentario específico, comparación entre sus locales), <strong>no envíes el correo</strong>. El genérico no convierte.</div>
+</div>
+
+<div id="e2" class="tco">
+<h4 class="mt">Envío de propuesta post-reunión</h4>
+<div class="eh"><strong>Asunto:</strong> [NOMBRE RESTAURANTE] — propuesta de lo conversado</div>
+<div class="eb" id="e2b">
+<p>Hola [NOMBRE],</p>
+<p>Fue un gusto conocerte y entender mejor la operación de [NOMBRE RESTAURANTE]. Como conversamos, te dejo aquí la propuesta concreta — adaptada al dolor principal que identificamos en la conversación.</p>
+<p><strong>Lo que entendimos como prioritario:</strong></p>
+<p>→ [RECAP DEL DOLOR PRINCIPAL — ej: "centralizar la gestión de reseñas con tono propio y tener visibilidad real de qué dicen tus clientes en Google"]<br>→ [DOLOR SECUNDARIO si lo hubo]</p>
+<p><strong>Lo que proponemos:</strong></p>
+<p>→ [MÓDULO/S PROPUESTO/S según lo conversado]<br>→ Pricing: [DETALLE EN UF + IVA]<br>→ Implementación: 2 semanas de onboarding, soporte directo durante todo el proceso</p>
+<p><strong>Próximos pasos:</strong></p>
+<p>Si te hace sentido, partimos el [FECHA CONCRETA] con onboarding. Solo confirmas por este mismo correo y avanzamos.</p>
+<p>Cualquier duda, respondo por aquí o por WhatsApp directo.</p>
+<p>Quedo atento,<br>[TU NOMBRE] · AyHungry<br>[TU WHATSAPP]</p>
+</div>
+<button class="cpb" onclick="cp('e2b')">📋 Copiar correo</button>
+<div class="co"><strong>Estructura del PDF que acompaña este correo:</strong> 1) Banner AyHungry · 2) Recap del dolor entendido · 3) Diagnóstico con data pública del prospecto · 4) Módulos propuestos (no catálogo completo) · 5) Precio en UF · 6) Próximos pasos concretos con fecha · 7) Datos de contacto directos.</div>
+</div>
+
+<div id="e3" class="tco">
+<h4 class="mt">Bienvenida post-firma — claridad operacional</h4>
+<div class="eh"><strong>Asunto:</strong> Bienvenido a AyHungry · Acuerdo, cobro y flujo de activación</div>
+<div class="eb" id="e3b">
+<p>Hola [NOMBRE],</p>
+<p>Es un gusto tenerte a bordo. A continuación dejamos por escrito cómo funciona nuestro acuerdo y el flujo de las próximas semanas — para que no haya sorpresas.</p>
+<p><strong>Cómo funciona el acuerdo</strong></p>
+<p>El servicio se activa con tu confirmación escrita de los módulos contratados (ej: "Confirmo Módulo 1 + Módulo 2"). El modelo es mes a mes — sin permanencia mínima.</p>
+<p><strong>Cobro</strong></p>
+<p>Facturación mensual desde la fecha de activación. Si activamos en mitad de mes, se cobra proporcional a los días. Plazo de pago: hasta fin de mes o máximo 5 días del siguiente.</p>
+<p><strong>Flujo operacional</strong></p>
+<p>1) <strong>Activación</strong> — Configuramos tu restaurante en plataforma.<br>2) <strong>Capacitación</strong> — Entrenamos a tu equipo (máx. 60 minutos).<br>3) <strong>Onboarding</strong> — Documento con links, accesos y dashboard listo.<br>4) <strong>Soporte continuo</strong> — Grupo de WhatsApp directo con el equipo, disponible 24/7.</p>
+<p><strong>Si en algún momento decides terminar</strong></p>
+<p>Avísanos por correo antes del próximo ciclo de facturación. Sin trámites, sin permanencias.</p>
+<p>Hoy partimos. Te iré informando paso a paso.</p>
+<p>Quedo atento,<br>[TU NOMBRE] · AyHungry</p>
+</div>
+<button class="cpb" onclick="cp('e3b')">📋 Copiar correo</button>
+</div>
+
+<div id="e4" class="tco">
+<h4 class="mt">Entrega de links y accesos — primer quick win</h4>
+<div class="eh"><strong>Asunto:</strong> [NOMBRE RESTAURANTE] activado · Links, accesos y próximos pasos</div>
+<div class="eb" id="e4b">
+<p>Hola [NOMBRE],</p>
+<p>¡Listo! [NOMBRE RESTAURANTE] está activado en AyHungry. A continuación todo lo que necesitas tener a mano.</p>
+<p><strong>Tu link de reserva</strong></p>
+<p>→ https://ayhungry.com/[tu-restaurante]/booking</p>
+<p>Úsalo en Instagram (bio), WhatsApp Business, comunicaciones comerciales, firma de correo y tu web.</p>
+<p><strong>Links con UTM para medir conversión por canal</strong></p>
+<p>→ Instagram: https://ayhungry.com/[tu-resto]/booking?utm_source=Instagram<br>→ Web: https://ayhungry.com/[tu-resto]/booking?utm_source=web<br>→ WhatsApp: https://ayhungry.com/[tu-resto]/booking?utm_source=whatsapp</p>
+<p><strong>Accesos al panel</strong></p>
+<p>→ [LINK PANEL]<br>→ Usuario: [USUARIO]<br>→ Capacitación de 30 min agendada para [FECHA]</p>
+<p><strong>Soporte</strong></p>
+<p>→ Mail: soporte@ayhungry.com<br>→ WhatsApp: [grupo activo desde hoy]</p>
+<p><strong>Qué esperar las próximas 2 semanas</strong></p>
+<p>→ Día 7: primeras reseñas respondidas automáticamente con IA<br>→ Día 14: primer reporte semanal completo a tu correo<br>→ Día 21: dashboard consolidado con data real</p>
+<p>¡Nos vemos en el panel!<br>[TU NOMBRE] · AyHungry</p>
+</div>
+<button class="cpb" onclick="cp('e4b')">📋 Copiar correo</button>
+</div>
+</div>
+</section>
+
+<section class="sec" id="whatsapp">
+<div class="sh"><span class="sn">08 · WhatsApp comercial</span><h2>Mensajes de seguimiento</h2><div class="st">Cercano, directo, sin script visible. WhatsApp es el canal de confianza — no abusarlo.</div></div>
+<div class="sc">
+<p class="si">Tres mensajes validados para los momentos críticos: 24 horas post-demo, 3 días sin respuesta y 7 días sin respuesta. La regla: si en 7 días no hay respuesta, pregunta directo si congelar el deal — la gente prefiere honestidad a persecución.</p>
+<h4 class="mt">Post-Demo — 24 horas después</h4>
+<div class="wb" id="w1"><p>¡Qué tal, [NOMBRE]?</p><p>Quería retomar contacto después de la demo de ayer. Me interesa saber sinceramente qué te pareció — y si quedó alguna duda o algo que no terminó de quedar claro, lo resolvemos ahora.</p><p>Sin presión 👌<span class="wt">14:23 ✓✓</span></p></div>
+<button class="cpb" onclick="cp('w1')">📋 Copiar mensaje</button>
+<h4 class="mt">Seguimiento — 3 días sin respuesta</h4>
+<div class="wb" id="w2"><p>Hola [NOMBRE],</p><p>Estuve pensando en lo que conversamos sobre [DOLOR ESPECÍFICO QUE MENCIONÓ]. Creo que la estructura que vimos hace match perfecto con lo que necesitas.</p><p>¿Te tinca que armemos los detalles finales esta semana para dejarlo operando antes de fin de mes?<span class="wt">10:47 ✓✓</span></p></div>
+<button class="cpb" onclick="cp('w2')">📋 Copiar mensaje</button>
+<h4 class="mt">Follow-up final — 7 días sin respuesta</h4>
+<div class="wb" id="w3"><p>[NOMBRE], te escribo corto:</p><p>¿Sigues interesado en avanzar con AyHungry o prefieres que lo congelemos por ahora? Cualquiera de las dos respuestas me sirve — solo quiero respetar tu tiempo.</p><p>Quedo atento 🙏<span class="wt">11:12 ✓✓</span></p></div>
+<button class="cpb" onclick="cp('w3')">📋 Copiar mensaje</button>
+<div class="cod"><strong>Estrategia de contactabilidad multi-canal:</strong>
+<table style="margin-top:15px;width:100%;color:#fff">
+<tr style="border-bottom:1px solid rgba(255,255,255,.2)"><td style="padding:10px 0;font-weight:700;color:var(--yellow);width:25%">Teléfono</td><td style="padding:10px 0">Prospección, calificación, cierre. Conversación viva — escuchar 70%.</td></tr>
+<tr style="border-bottom:1px solid rgba(255,255,255,.2)"><td style="padding:10px 0;font-weight:700;color:var(--yellow)">WhatsApp</td><td style="padding:10px 0">Seguimiento, confirmación, urgencias. Máx 2–3 párrafos. Tono cercano.</td></tr>
+<tr><td style="padding:10px 0;font-weight:700;color:var(--yellow)">Email</td><td style="padding:10px 0">Propuestas formales, documentación. 3–4 párrafos. Una sola CTA clara.</td></tr>
+</table>
+<p style="margin-top:15px;font-size:.9em"><strong>Secuencia validada:</strong> Teléfono → WhatsApp (30 min después) → Email (post-demo). Nunca simultáneo.</p>
+</div>
+</div>
+</section>
+
+<section class="sec" id="precios">
+<div class="sh"><span class="sn">09 · Pricing oficial</span><h2>Estructura de precios</h2><div class="st">Todos los valores en UF + IVA por local/mes. Sin permanencia mínima — esto es ventaja competitiva, no la regalemos.</div></div>
+<div class="sc">
+<h3 class="sst">Módulos base</h3>
+<div class="pg">
+<div class="pc"><div class="ml">Módulo 1</div><div class="mn">Reservas y Operación Estratégica</div><div class="pv">1,5<span class="pu">UF + IVA / mes</span></div></div>
+<div class="pc"><div class="ml">Módulo 2</div><div class="mn">Reputación y Decisiones con Data</div><div class="pv">1,5<span class="pu">UF + IVA / mes</span></div></div>
+<div class="pc"><div class="ml">Add-on</div><div class="mn">WhatsApp Gastronómico con IA</div><div class="pv">1<span class="pu">UF + IVA / mes</span></div></div>
+</div>
+<h3 class="sst">Bundles — lo que más se vende</h3>
+<div class="pg">
+<div class="pc ft"><div class="ml">Servicio Full</div><div class="mn">M1 + M2</div><div class="pv">2,5<span class="pu">UF + IVA / mes</span></div><div class="sv">Ahorro de 0,5 UF</div></div>
+<div class="pc ft"><div class="ml">Bundle Completo</div><div class="mn">M1 + M2 + WhatsApp</div><div class="pv">3,5<span class="pu">UF + IVA / mes</span></div><div class="sv">Ahorro de 0,5 UF</div></div>
+</div>
+<h3 class="sst">Reglas de descuento</h3>
+<table class="stt">
+<thead><tr><th style="width:25%">Descuento</th><th>Aprobación</th><th>Cuándo aplica</th></tr></thead>
+<tbody>
+<tr><td><strong>Hasta 10%</strong></td><td>Vendedor autónomo</td><td>Debe quedar registrado en CRM con razón. Cualquier descuento se canjea por algo (volumen, referencia, caso público).</td></tr>
+<tr><td><strong>10% – 25%</strong></td><td>Validación de Seba antes de propuesta</td><td>Grupos con 6+ locales activos. Descuento progresivo: 15% para 3–5 locales, 25% para 6+.</td></tr>
+<tr><td><strong>+ de 25%</strong></td><td>Solo enterprise con compromiso</td><td>Deals enterprise con compromiso de volumen y permanencia mínima escrita. Validar caso a caso.</td></tr>
+</tbody>
+</table>
+<div class="co"><strong>Cuándo NO negociar precio:</strong>
+<ul style="padding-left:20px;margin-top:10px;line-height:1.75;font-size:.92em">
+<li>Si el cliente pide descuento <strong>antes</strong> de ver la demo: significa que no entiende el valor todavía.</li>
+<li>Si pide descuento sin ofrecer nada a cambio (volumen, permanencia, referencia, caso de éxito público).</li>
+<li>Si el descuento te lleva por debajo del breakeven. Mejor perder el deal que ganarlo mal.</li>
+</ul></div>
+<div class="cod"><strong>Anclaje de valor (úsalo en propuestas):</strong> 2,5 UF al mes equivale aproximadamente al ticket promedio de 2 mesas de 2 personas en un restaurante de ticket medio-alto. <strong>Si AyHungry te recupera más que eso al mes en reservas que hoy no estás capturando, el sistema se paga solo.</strong></div>
+</div>
+</section>
+
+<section class="sec" id="objeciones">
+<div class="sh"><span class="sn">10 · Manejo de objeciones</span><h2>Las 6 objeciones reales</h2><div class="st">Cada objeción tiene 3 capas: qué dicen, qué significan realmente, y cómo responder. Validadas en deals cerrados.</div></div>
+<div class="sc">
+<p class="si">Las objeciones son señales de interés cuando se manejan bien. La regla: nunca defenderse — entender, validar, responder con valor y cerrar con una pregunta.</p>
+
+<div class="oc"><div class="oq">Ya uso Cover Manager / OpenTable / TheFork para reservas</div><div class="om"><strong>Qué significa realmente:</strong> Tiene sistema, está cómodo, no quiere migrar.</div><div class="or"><strong>Respuesta:</strong> Perfecto, no te pedimos que cambies. Entramos por reputación y data, que es donde casi nadie tiene un sistema centralizado. M2 funciona independiente, y si en 6 meses quieres consolidar con nosotros, lo conversamos.</div><div class="ocl"><strong>Pregunta de cierre:</strong> ¿Quién maneja hoy tus reseñas de Google?</div></div>
+
+<div class="oc"><div class="oq">Es caro / 1,5 UF por reseñas es mucho</div><div class="om"><strong>Qué significa realmente:</strong> No ve el ROI claro todavía, o lo está comparando con "gratis" (responder a mano).</div><div class="or"><strong>Respuesta:</strong> Te entiendo. Compáralo con horas-persona reales: si tu equipo dedica 4 horas semanales a reseñas, son 16 horas al mes. A salario operativo gastronómico, son fácilmente 2–3x el costo del módulo. Y eso sin contar lo que vale tener data consolidada que hoy no tienes.</div><div class="ocl"><strong>Pregunta de cierre:</strong> ¿Cuántas horas a la semana dedicas tú o tu equipo a responder reseñas?</div></div>
+
+<div class="oc"><div class="oq">No tengo tiempo para implementar otro sistema</div><div class="om"><strong>Qué significa realmente:</strong> Le aterra el cambio operacional, no el producto.</div><div class="or"><strong>Respuesta:</strong> Lo entiendo. Por eso el onboarding promedio es de 2 semanas con nosotros haciendo el setup. Tu equipo no necesita aprender nada complejo: el flujo es responder reseñas y revisar el reporte semanal que llega al correo.</div><div class="ocl"><strong>Pregunta de cierre:</strong> Si en 2 semanas estás operando sin esfuerzo, ¿te haría sentido empezar este mes?</div></div>
+
+<div class="oc"><div class="oq">Tengo que pensarlo / consultarlo con mi socio</div><div class="om"><strong>Qué significa realmente:</strong> No hay un "no" claro, pero falta el sponsor real para empujarlo.</div><div class="or"><strong>Respuesta:</strong> Perfecto, totalmente válido. ¿Qué información necesitarías para esa conversación con tu socio? Te puedo armar un resumen ejecutivo de 1 página con lo que vimos hoy + ROI proyectado, para que la conversación sea más rápida.</div><div class="ocl"><strong>Pregunta de cierre:</strong> ¿Cuándo crees que podrían tener la conversación? Te llamo después.</div></div>
+
+<div class="oc"><div class="oq">Las reseñas las manejamos a mano, no necesitamos sistema</div><div class="om"><strong>Qué significa realmente:</strong> Subestima el costo de oportunidad de no tener data consolidada.</div><div class="or"><strong>Respuesta:</strong> Es lo que escucho más seguido y entiendo el punto. La pregunta no es si las puedes responder a mano — claro que sí. La pregunta es si tienes hoy una vista consolidada de qué dicen, cómo evolucionan en el tiempo, y qué patrones se repiten entre tus locales. Eso es lo que un proceso manual no te da, por más bueno que sea el equipo.</div><div class="ocl"><strong>Pregunta de cierre:</strong> Si te muestro en 5 minutos el dashboard con datos reales de tu local, ¿lo miramos?</div></div>
+
+<div class="oc"><div class="oq">Ya tengo una agencia de marketing que me maneja eso</div><div class="om"><strong>Qué significa realmente:</strong> La agencia es competidor indirecto, pero rara vez tiene producto real — solo servicio manual.</div><div class="or"><strong>Respuesta:</strong> Buenísimo que tengas agencia. Lo que hacemos no compite con eso: le damos a tu agencia (o a ti) la herramienta para hacerlo bien y a escala. La data sigue siendo tuya, las respuestas las puede generar la agencia con nuestra IA. Muchos clientes nuestros tienen agencia.</div><div class="ocl"><strong>Pregunta de cierre:</strong> ¿La agencia te entrega reportes consolidados de reseñas con análisis de sentimiento?</div></div>
+</div>
+</section>
+
+<section class="sec" id="cierre">
+<div class="sh"><span class="sn">11 · Pedir el cierre</span><h2>Señales y formas de cierre</h2><div class="st">No esperes a que el cliente te diga "sí". Identifica las señales y pide el cierre con asertividad respetuosa.</div></div>
+<div class="sc">
+<div class="sg">
+<div class="sib sgo"><h4>✅ Señales de compra REALES</h4><ul>
+<li>Empieza a preguntar por <strong>implementación</strong>, no por el producto.</li>
+<li>Quiere saber <strong>quién será su contacto post-venta</strong>.</li>
+<li>Pide ver más <strong>casos de uso</strong> o referencias de clientes similares.</li>
+<li>Pregunta por <strong>timing concreto</strong>: "¿cuándo podríamos empezar?".</li>
+<li>Involucra a otros internos (operaciones, IT, finanzas) en la conversación.</li>
+</ul></div>
+<div class="sib sba"><h4>⚠️ Señales FALSAS (no confundir)</h4><ul>
+<li>"Me encantó la demo, voy a presentarla internamente" — sin próximo paso agendado es un "no" suave.</li>
+<li>Pide muchas presentaciones repetidas a distintos stakeholders <strong>sin avanzar</strong> en propuesta.</li>
+<li>Pregunta solo por precio <strong>sin haber confirmado dolor</strong>.</li>
+<li>"Estoy comparando con otros 3 proveedores" sin querer compartir cuáles.</li>
+</ul></div>
+</div>
+<h3 class="sst">Las 4 formas de pedir el cierre</h3>
+<div class="tc">
+<div class="cb"><h4>🎯 Cierre asumido</h4><p style="font-size:.95em;line-height:1.7;font-style:italic">"Entonces te envío la propuesta hoy y partimos el próximo lunes, ¿bien?"</p></div>
+<div class="cb"><h4>🔀 Cierre alternativo</h4><p style="font-size:.95em;line-height:1.7;font-style:italic">"¿Prefieres empezar con los 3 locales más grandes o con los 3 que más necesitan ayuda?"</p></div>
+<div class="cb alt"><h4>⏰ Cierre por urgencia natural</h4><p style="font-size:.95em;line-height:1.7;font-style:italic">"Si firmamos esta semana, alcanzamos a tenerte operando antes del 1 del próximo mes."</p></div>
+<div class="cb alt"><h4>🧪 Cierre por prueba (enterprise)</h4><p style="font-size:.95em;line-height:1.7;font-style:italic">"Lo más limpio es una prueba sin compromiso de continuidad. Tú evalúas a los 30 días con data en mano."</p></div>
+</div>
+<div class="co"><strong>Cuando el deal se estanca más de 4 semanas:</strong> Primera semana sin respuesta, follow-up corto y útil (caso de uso, dato relevante). Segunda semana, pregunta directa: <em>"¿Sigues interesado o lo congelamos para más adelante?"</em>. La gente prefiere honestidad a persecución. Después de 4 semanas sin avance, marcar como "frío" y agendar follow-up a 90 días.</div>
+</div>
+</section>
+
+<section class="sec" id="tabla">
+<div class="sh"><span class="sn">12 · Quick reference</span><h2>Tabla comparativa de módulos</h2><div class="st">Qué incluye cada módulo y combinación. Imprimir y tener a mano en demos.</div></div>
+<div class="sc">
+<table class="ctab">
+<thead><tr><th>Feature</th><th>M1</th><th>M1+WA</th><th>M2</th><th>M1+M2</th><th>FULL</th></tr></thead>
+<tbody>
+<tr><td>Sistema de reservas online</td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dh">—</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td></tr>
+<tr><td>Botón Google + link en ficha</td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dh">—</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td></tr>
+<tr><td>Menú digital</td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dh">—</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td></tr>
+<tr><td>Planograma multi-zona</td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dh">—</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td></tr>
+<tr><td>Ticketera (eventos)</td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dh">—</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td></tr>
+<tr class="fr"><td><strong>Agente IA WhatsApp 24/7</strong></td><td><span class="dh">—</span></td><td><span class="ck">✓</span></td><td><span class="dh">—</span></td><td><span class="dh">—</span></td><td><span class="ck">✓</span></td></tr>
+<tr><td>Reseñas centralizadas (Google, TripAdvisor, Facebook)</td><td><span class="dh">—</span></td><td><span class="dh">—</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td></tr>
+<tr><td>Respuestas IA con tono propio (ChIA)</td><td><span class="dh">—</span></td><td><span class="dh">—</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td></tr>
+<tr><td>Análisis de sentiment por tópico</td><td><span class="dh">—</span></td><td><span class="dh">—</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td></tr>
+<tr><td>Tarjetas NFC con tracking por mozo</td><td><span class="dh">—</span></td><td><span class="dh">—</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td></tr>
+<tr><td>CRM con ficha 360° del cliente</td><td><span class="dh">—</span></td><td><span class="dh">—</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td></tr>
+<tr><td>Reportes semanal + mensual</td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td></tr>
+<tr><td>Soporte directo 24/7</td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td></tr>
+<tr class="pr"><td>PRECIO POR LOCAL / MES</td><td>1,5 UF</td><td>2,5 UF</td><td>1,5 UF</td><td>2,5 UF</td><td>3,5 UF</td></tr>
+</tbody>
+</table>
+<div class="co"><strong>Recordatorios al cotizar:</strong> Todos los precios son <strong>+ IVA por local/mes</strong>. Para 6+ locales aplica 25% de descuento grupal. Para 3–5 locales, 15%. Sin permanencia mínima en ningún plan.</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="sh"><span class="sn">13 · Quick play</span><h2>Estrategia por segmento — cheat sheet</h2><div class="st">Cómo abrir, qué proponer y a qué precio según el tipo de cliente.</div></div>
+<div class="sc">
+<table class="stt">
+<thead><tr><th>Segmento</th><th>Abre con</th><th>Propón</th><th>Precio orientativo</th></tr></thead>
+<tbody>
+<tr><td><strong>Premium (ticket alto · 1 local)</strong></td><td>Reputación</td><td>Bundle FULL (M1+M2+WA)</td><td>3,5 UF</td></tr>
+<tr><td><strong>Operacional (volumen · 1-2 locales)</strong></td><td>Demanda / reservas</td><td>M1 + WhatsApp</td><td>2,5 UF</td></tr>
+<tr><td><strong>Crecimiento (marca nueva)</strong></td><td>Holístico (sistema operativo)</td><td>M1 solo (upsell a 3 meses)</td><td>1,5 UF</td></tr>
+<tr><td><strong>Grupo gastronómico (3–9 locales)</strong></td><td>Reputación + dashboard consolidado</td><td>M1+M2, con descuento por volumen</td><td>2,5 UF · -15% / -25%</td></tr>
+<tr><td><strong>Enterprise (10+ locales)</strong></td><td>Reputación + data ejecutiva</td><td>Prueba 30 días · 3 locales</td><td>0,5 UF/local prueba</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="sec" id="metricas">
+<div class="sh"><span class="sn">14 · Cómo se mide tu trabajo</span><h2>Métricas esperadas</h2><div class="st">Indicadores para autoevaluar tu pipeline y conversión.</div></div>
+<div class="sc">
+<div class="mg-grid">
+<div class="mb"><div class="mv">20%</div><div class="ml-lab">Conversión esperada<br>semana 1–4 (5 contactos → 1 cierre)</div></div>
+<div class="mb"><div class="mv">30%</div><div class="ml-lab">Conversión esperada<br>desde semana 4 en adelante</div></div>
+<div class="mb"><div class="mv">5 días</div><div class="ml-lab">Ciclo de venta promedio<br>SMB independiente</div></div>
+<div class="mb"><div class="mv">2 semanas</div><div class="ml-lab">Onboarding promedio<br>(3 semanas si hay migración de data)</div></div>
+</div>
+<h3 class="sst">Quick wins de los primeros 30 días</h3>
+<ul style="padding-left:20px;line-height:1.85;font-size:.95em">
+<li><strong>Día 14:</strong> Primer reporte semanal completo entregado — el cliente debe poder mostrarlo a su jefe.</li>
+<li><strong>Día 7:</strong> Al menos 5 reseñas respondidas automáticamente con IA.</li>
+<li><strong>Día 21:</strong> Dashboard consolidado funcionando con data real del cliente.</li>
+<li><strong>Día 30:</strong> Llamada de check-in del vendedor para validar satisfacción y detectar fricciones tempranas.</li>
+</ul>
+</div>
+</section>
+
+<section class="sec" id="anti">
+<div class="sh"><span class="sn">15 · Errores a evitar</span><h2>Anti-patrones · qué NO hacer</h2><div class="st">La lista de cosas que matan deals AyHungry. Aprendido en el camino.</div></div>
+<div class="sc">
+<div class="al"><h4>Los 10 errores que matan deals</h4><ul>
+<li><strong>Prometer features que no existen.</strong> Si no lo puedes demostrar en vivo hoy, no lo vendas. Vale el deal perdido, no vale el cliente decepcionado en mes 2.</li>
+<li><strong>Cerrar mal fit por presión de cuota.</strong> Un cliente fuera de ICP es churn casi garantizado y consume tiempo de implementación.</li>
+<li><strong>Descuentos sin contrapartida.</strong> Si bajas precio, exiges algo (volumen, permanencia, referencia, caso público). Regalar precio educa al cliente a no valorar.</li>
+<li><strong>Demos sin discovery previo.</strong> Mostrar producto sin entender el dolor convierte la demo en feature dump y baja la conversión.</li>
+<li><strong>Compararse explícitamente con competidores nombrándolos.</strong> Diferenciar por valor propio. Hablar mal de Cover Manager, OpenTable o agencias te hace ver chico.</li>
+<li><strong>Vender "AyReviews" a un restaurante.</strong> En vertical gastronómico siempre es AyHungry.</li>
+<li><strong>Olvidar mencionar contraindicaciones en la propuesta.</strong> Si algo puede fallar, dejarlo por escrito. Honestidad protectora.</li>
+<li><strong>Enviar propuesta antes de la reunión.</strong> El cliente la lee sin contexto, decide solo por precio y se cae el deal.</li>
+<li><strong>Perder seguimiento después de propuesta enviada.</strong> Si no hay próximo paso agendado al enviar el PDF, el deal muere.</li>
+<li><strong>Tratar a un grupo grande como SMB.</strong> Pricing, ciclo y proceso son distintos. No reciclar el mismo email.</li>
+</ul></div>
+<div class="cod"><strong>Regla de oro del Playbook:</strong> Si este guión contradice lo que tu instinto te dice frente al cliente, <strong>sigue al cliente</strong> y avisa después qué pasó. El guión se actualiza, los deals no se recuperan.</div>
+</div>
+</section>
+
+</div>
+
+<footer>
+<div class="br">AyHungry</div>
+<div class="me">Kit Ejecutivos v2.0 · Junio 2026 · Uso interno</div>
+<div class="me" style="margin-top:8px">Documento vivo. Iterar trimestralmente.</div>
+</footer>
+
+<script>
+function st(e,n){const c=e.currentTarget.closest('.sc');c.querySelectorAll('.tco').forEach(t=>t.classList.remove('active'));c.querySelectorAll('.tb').forEach(b=>b.classList.remove('active'));document.getElementById(n).classList.add('active');e.currentTarget.classList.add('active')}
+function cp(i){const e=document.getElementById(i);navigator.clipboard.writeText(e.innerText).then(()=>alert('Texto copiado ✓'))}
+</script>
+
+</body>
+</html>
